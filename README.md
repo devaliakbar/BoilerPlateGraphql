@@ -96,7 +96,7 @@ sudo systemctl start nginx
 
 sudo systemctl enable nginx
 
-sudo vi /etc/nginx/sites-available/default
+sudo nano /etc/nginx/sites-available/default
 
     location / {
         proxy_pass http://localhost:4000;
