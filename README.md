@@ -29,4 +29,18 @@ Now Run the project by the following command <br>
 => npm run dev <br>
 Go to "http://localhost:4000" 
 
-## Deploy to server
+## Deploy to server(Digital Ocean)
+### Setup Prisma Server
+Select a Docker droplet <br>
+Upload "docker-compose.yml" file from prisma folder to server. (Uncomment line 12) <br>
+'''python
+scp docker-compose.yml root@{ip}:~
+'''
+Connect to ssh, their in root directory, their will be "docker-compose.yml" file.<br>
+Then run
+=> docker-compose up -d
+=> docker ps
+
+
+
+
