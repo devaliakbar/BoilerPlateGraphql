@@ -59,6 +59,8 @@ Now our Prisma server is updated
 
 #### Now we can deploy node js
 <ui>
-<li>npm run build-project</li>
+<ol>npm run build-project</oi>
+<ol>copy 'package.json' to dist directory</oi>
+<ol>now compress files in 'dist' directory</oi>
 <ui>
 
