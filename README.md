@@ -82,7 +82,7 @@ Now our Prisma server is updated
 
 4. apt-get install build-essential
 
-5. npm install -g pm2 prisma
+5. npm install -g pm2
 
 6. rm -rf nodesource_setup.sh
 
