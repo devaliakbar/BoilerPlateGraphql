@@ -58,5 +58,7 @@ Now our Prisma server is updated
 <br><br>
 
 #### Now we can deploy node js
-
+<ui>
+<li>npm run build-project</li>
+<ui>
 
