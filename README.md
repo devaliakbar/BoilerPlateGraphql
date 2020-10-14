@@ -16,7 +16,7 @@ now run <br>
 => npm init <br>
 => npm i @babel/polyfill babel-cli babel-plugin-transform-object-rest-spread babel-preset-env bcryptjs env-cmd graphql-yoga jsonwebtoken prisma-binding <br>
 => npm i nodemon --save-dev <br>
-=> Now Replace "package.json" file "script" object with the following <br>
+=> Now Replace "package.json" file "scripts" object with the following <br>
 ```javascript
   "scripts": {
     "start": "node dist/index.js",
