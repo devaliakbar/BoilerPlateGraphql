@@ -1,2 +1,2 @@
 # BoilerPlateGraphql
-Clone this project and delete .git
+Clone this project and delete '.git' file
