@@ -33,14 +33,14 @@ Go to "http://localhost:4000"
 ### Setup Prisma Server
 Select a Docker droplet <br>
 Upload "docker-compose.yml" file from prisma folder to server. (Uncomment line 12) <br>
-<br>
 scp docker-compose.yml root@{ip}:~
 <br>
 Connect to ssh, their in root directory, their will be "docker-compose.yml" file.<br>
 Then run <br>
-=> docker-compose up -d
+=> docker-compose up -d <br>
 => docker ps
-
+<br>
+<br>
 
 
 
