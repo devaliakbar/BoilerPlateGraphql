@@ -62,11 +62,12 @@ Now our Prisma server is updated
 <li>npm run build-project</li>
 <li>copy 'package.json' to dist directory</li>
 <li>in 'package.json' file, remove "devDependencies" object and replace "scripts" object with the following </li>
+<ol>
 ```javascript
   "scripts": {
     "start": "node index.js",
   },
 ```
 <li>now compress files in 'dist' directory</li>
-<ol>
+
 
