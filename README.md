@@ -111,3 +111,10 @@ sudo nginx -t
 sudo systemctl restart nginx
 
 </pre>
+
+###### Now do the following
+<ol>
+<li>Unzip uploaded zip file go to that directory</li>
+<li>npm install</li>
+<li>PRISMA_ENDPOINT=http://143.110.185.234:4466/prisma/prod PRISMA_SECRET=thisismysecret JWT_SECRET=mysecret PORT=4000 pm2 start index.js<li/>
+</ol>
