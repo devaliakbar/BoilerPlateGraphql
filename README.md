@@ -25,5 +25,8 @@ now run <br>
     "test": "echo \"Error: no test specified\" && exit 1"
   },
 ```
-=>Now Run the project by the following command <br>
-=> npm run dev
+Now Run the project by the following command <br>
+=> npm run dev <br>
+Go to "http://localhost:4000" 
+
+##Deploy to server
