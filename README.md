@@ -25,3 +25,5 @@ now run <br>
     "test": "echo \"Error: no test specified\" && exit 1"
   },
 ```
+=>Now Run the project by the following command <br>
+=> npm run dev
