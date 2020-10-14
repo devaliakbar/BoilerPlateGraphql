@@ -69,5 +69,45 @@ Now our Prisma server is updated
 <pre> </li>
 <li>now compress files in 'dist' directory</li>
 <li>upload to server</li>
-<li>scp -r Archive.zip root@134.209.148.153:~</li>
+<li>scp -r Archive.zip root@{ip}:~</li>
 <ol>
+
+##### Now setup server
+<pre>
+1. curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
+
+2. bash nodesource_setup.sh
+
+3. apt-get install nodejs
+
+4. apt-get install build-essential
+
+5. npm install -g pm2 prisma
+
+6. rm -rf nodesource_setup.sh
+
+User Apache(Op)
+
+sudo apt install nginx
+
+ufw allow 'Nginx HTTP'
+
+sudo systemctl start nginx
+
+sudo systemctl enable nginx
+
+sudo vi /etc/nginx/sites-available/default
+
+    location / {
+        proxy_pass http://localhost:4000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+
+sudo nginx -t
+sudo systemctl restart nginx
+
+</pre>
