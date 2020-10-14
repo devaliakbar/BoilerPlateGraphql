@@ -40,7 +40,10 @@ Then run <br>
 => docker-compose up -d <br>
 => docker ps
 <br>
-<br>
+Now your deployment prisma server is running <br>
 
+### Setup Node js Server
+First in our prisma project root directory, do the following command <br>
+=> prisma init prisma (Here select use existing prisma server) <br>
 
 
