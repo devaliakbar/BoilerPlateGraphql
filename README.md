@@ -68,6 +68,7 @@ Now our Prisma server is updated
   },
 <pre> </li>
 <li>now compress files in 'dist' directory</li>
+<li>Unzip the file in another location and try to run(testing). we may need to fix some path issues (prisma.js:13:14 , server.js:23).. also  fix envirement variable</li>
 <li>upload to server</li>
 <li>scp -r Archive.zip root@{ip}:~</li>
 <ol>
@@ -116,5 +117,5 @@ sudo systemctl restart nginx
 <ol>
 <li>Unzip uploaded zip file go to that directory</li>
 <li>npm install</li>
-<li>PRISMA_ENDPOINT=http://143.110.185.234:4466/prisma/prod PRISMA_SECRET=thisismysecret JWT_SECRET=mysecret PORT=4000 pm2 start index.js<li/>
+<li>pm2 start index.js<li/>
 </ol>
