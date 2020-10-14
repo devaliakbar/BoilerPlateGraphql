@@ -43,15 +43,15 @@ Then run <br>
 Now your deployment prisma server is running <br>
 
 ### Setup Node js Server
-First in your prisma project root directory, do the following command <br>
+First in your prisma project root directory <br>
 => Create a new file called 'prod.env' in config folder and add the following line <br>
 ```javascript
   PRISMA_MANAGEMENT_API_SECRET=my-secret
 ```
 Here 'my-secret' is the "docker-compose.yml" file , Uncommented line 12 managementApiSecret. <br>
-=> Copy content of 'dev.prod' file except : PRISMA_ENDPOINT=http://{ip}:4466 , to prod.env <br>
-=> Now come back to project root directory
-=> cd prisma
+=> Copy contents of 'dev.prod' file except : PRISMA_ENDPOINT=http://{ip}:4466 , to prod.env <br>
+=> Now come back to project root directory <br>
+=> cd prisma <br>
 => prisma deploy -e ../config/prod.env <br>
 Now our Prisma server is updated
 <br><br>
